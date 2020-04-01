@@ -1,0 +1,5 @@
+21:28:45,432 DEBUG devpinoyLogger<strong>{1}</strong>:80 - Opened Website
+21:28:47,926 DEBUG devpinoyLogger<strong>{1}</strong>:89 - Entered Username
+21:28:48,469 DEBUG devpinoyLogger<strong>{1}</strong>:92 - Entered Password
+21:29:10,505 DEBUG devpinoyLogger<strong>{1}</strong>:95 - Clicked on login button
+21:29:10,855  INFO devpinoyLogger<strong>{1}</strong>:100 - Logged in successfully

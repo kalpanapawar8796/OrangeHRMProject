@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="98430" started-at="2020-03-31T15:42:50Z" finished-at="2020-03-31T15:44:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="98430" started-at="2020-03-31T15:42:50Z" finished-at="2020-03-31T15:44:29Z">
+      <class name="Test.TestLogin">
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:Test.TestLogin@bfbc86]" name="setUpBrowser" is-config="true" duration-ms="32240" started-at="2020-03-31T21:12:50Z" finished-at="2020-03-31T21:13:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="loginToOrangeHRM(java.lang.String, java.lang.String)[pri:1, instance:Test.TestLogin@bfbc86]" name="loginToOrangeHRM" duration-ms="63327" started-at="2020-03-31T21:13:24Z" data-provider="readData" finished-at="2020-03-31T21:14:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToOrangeHRM -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Test.TestLogin@bfbc86]" name="tearDown" is-config="true" duration-ms="3" started-at="2020-03-31T21:14:28Z" finished-at="2020-03-31T21:14:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginToOrangeHRM status=SUCCESS method=TestLogin.loginToOrangeHRM(java.lang.String, java.lang.String)[pri:1, instance:Test.TestLogin@bfbc86] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Test.TestLogin@bfbc86]" name="closeBrowser" is-config="true" duration-ms="1106" started-at="2020-03-31T21:14:28Z" finished-at="2020-03-31T21:14:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Test.TestLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
