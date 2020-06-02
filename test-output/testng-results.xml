@@ -2,16 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="179" started-at="2020-04-01T12:19:10Z" finished-at="2020-04-01T12:19:10Z">
+  <suite name="Default suite" duration-ms="24042" started-at="2020-06-01T11:13:54Z" finished-at="2020-06-01T11:14:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="179" started-at="2020-04-01T12:19:10Z" finished-at="2020-04-01T12:19:10Z">
-      <class name="Test.TestHello">
-        <test-method status="PASS" signature="myTest()[pri:0, instance:Test.TestHello@8e7350]" name="myTest" duration-ms="50" started-at="2020-04-01T17:49:10Z" finished-at="2020-04-01T17:49:10Z">
+    <test name="Default test" duration-ms="24042" started-at="2020-06-01T11:13:54Z" finished-at="2020-06-01T11:14:18Z">
+      <class name="Test.AlertTest">
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:Test.AlertTest@25a98f]" name="setUpBrowser" is-config="true" duration-ms="12762" started-at="2020-06-01T16:43:54Z" finished-at="2020-06-01T16:44:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- myTest -->
-      </class> <!-- Test.TestHello -->
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="loginToOrangeHRMSite(java.lang.String, java.lang.String)[pri:1, instance:Test.AlertTest@25a98f]" name="loginToOrangeHRMSite" duration-ms="9457" started-at="2020-06-01T16:44:09Z" data-provider="readData" finished-at="2020-06-01T16:44:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToOrangeHRMSite -->
+      </class> <!-- Test.AlertTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

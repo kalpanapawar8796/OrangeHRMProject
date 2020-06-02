@@ -61,9 +61,11 @@ public class TestLogin {
 
 		System.out.println("Path  " + CurrentProjectPath);
 
-		System.setProperty("webdriver.chrome.driver", CurrentProjectPath + "/Drivers/ChromeDriver/chromedriver_4.exe");
-
+	
+		System.setProperty("webdriver.chrome.driver", CurrentProjectPath + "/Drivers/ChromeDriver/chromedriver_5.exe");
+	
 		driver = new ChromeDriver();
+		
 		driver.manage().window().maximize();
 
 		/*
@@ -98,6 +100,10 @@ public class TestLogin {
 		System.out.println("Logged in user name : " + dashboard.getLoggedInUsername());
 		Assert.assertEquals(dashboard.getLoggedInUsername(), "Welcome Admin");
 		log.info("Logged in successfully");
+	}
+	@Test
+	public void demo(){
+		System.out.println("dsffffffffsdfsdfsdfdsfs");
 	}
 
 	public void takeScreenshot() throws Exception {

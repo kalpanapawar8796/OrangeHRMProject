@@ -6,7 +6,7 @@
       <class name="Test.TestLogin">
         <methods>
           <include name="loginToOrangeHRM" invocation-numbers="0"/>
-          <include name="setUpBrowser"/>
+          <include name="demo"/>
         </methods>
       </class> <!-- Test.TestLogin -->
     </classes>
