@@ -4,10 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class AssertTrueTest {
 
-	public static void main(String[] args) {
+	@Test
+	public void assertTrueTestDemo(){
 		String CurrentProjectPath = System.getProperty("user.dir");
 
 		System.out.println("Path  " + CurrentProjectPath);

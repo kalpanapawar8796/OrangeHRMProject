@@ -4,10 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class AssertEqualsTest {
 
-	public static void main(String[] args) {
+	@Test
+	public void assertEqualsTestDemo(){
 		
 		/*AssertEquals() is a method used to compare the actual and expected results.
 		If both the actual and expected results are same, then the assertion pass with no exception and 

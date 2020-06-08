@@ -1,10 +1,12 @@
 package Test;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class AssertNullTest {
 
-	public static void main(String[] args) {
+	@Test
+	public void assertNullTestDemo(){
 		/*AssertNull() is a method that verifies whether the object is null or not. 
 		If an object is null, then assertion passes the test case, and the test case is marked as "passed", and
 		if an object is not null, 

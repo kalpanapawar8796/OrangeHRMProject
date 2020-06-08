@@ -5,6 +5,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 /** Drop Down
  * Select selobj = new Select(select locator);
  * 
@@ -19,7 +20,8 @@ import org.openqa.selenium.support.ui.Select;
  * */
 public class DropDownTest {
 		
-	public static void main(String[] args) throws NoAlertPresentException, InterruptedException {
+	@Test
+	public void dropDownDemo() throws InterruptedException{
 		String CurrentProjectPath = System.getProperty("user.dir");
 
 		System.out.println("Path  " + CurrentProjectPath);
@@ -40,6 +42,7 @@ public class DropDownTest {
 		
 		selobj.selectByVisibleText("Database Testing");
 		
+		driver.close();
 	
 	}
 }

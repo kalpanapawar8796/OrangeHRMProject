@@ -1,10 +1,12 @@
 package Test;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class AssertNotEqualsTest {
 
-	public static void main(String[] args) {
+	@Test
+	public void assertNotEqualsTestDemo(){
 		/*It is opposite to the function of AssertNotEquals() method. 
 		AssertNotEquals() is a method used to compare the actual and expected results.
 		If both the actual and expected results are not the same, then the assertion pass with no exception and

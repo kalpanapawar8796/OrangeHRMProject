@@ -2,31 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24042" started-at="2020-06-01T11:13:54Z" finished-at="2020-06-01T11:14:18Z">
+  <suite name="Default suite" duration-ms="24806" started-at="2020-06-08T07:15:27Z" finished-at="2020-06-08T07:15:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24042" started-at="2020-06-01T11:13:54Z" finished-at="2020-06-01T11:14:18Z">
+    <test name="Default test" duration-ms="24806" started-at="2020-06-08T07:15:27Z" finished-at="2020-06-08T07:15:52Z">
       <class name="Test.AlertTest">
-        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:Test.AlertTest@25a98f]" name="setUpBrowser" is-config="true" duration-ms="12762" started-at="2020-06-01T16:43:54Z" finished-at="2020-06-01T16:44:07Z">
+        <test-method status="PASS" signature="alertTestDemo()[pri:0, instance:Test.AlertTest@6ba0ac]" name="alertTestDemo" duration-ms="24721" started-at="2020-06-08T12:45:27Z" finished-at="2020-06-08T12:45:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpBrowser -->
-        <test-method status="PASS" signature="loginToOrangeHRMSite(java.lang.String, java.lang.String)[pri:1, instance:Test.AlertTest@25a98f]" name="loginToOrangeHRMSite" duration-ms="9457" started-at="2020-06-01T16:44:09Z" data-provider="readData" finished-at="2020-06-01T16:44:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToOrangeHRMSite -->
+        </test-method> <!-- alertTestDemo -->
       </class> <!-- Test.AlertTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

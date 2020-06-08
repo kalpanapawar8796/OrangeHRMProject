@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
 /**
  * clickAndHold(WebElement element) - Clicks a web element at the middle(without releasing).
 moveToElement(WebElement element) - Moves the mouse pointer to the middle of the web element without clicking.
@@ -18,8 +19,9 @@ build() - Generates a composite actio
 public class DragNDropTest {
 
 	
-public static void main(String[] args) throws NoAlertPresentException, InterruptedException {
-	String CurrentProjectPath = System.getProperty("user.dir");
+	@Test
+	public void dragAndDropDemo() throws InterruptedException{
+		String CurrentProjectPath = System.getProperty("user.dir");
 
 	System.out.println("Path  " + CurrentProjectPath);
 
@@ -57,7 +59,8 @@ public static void main(String[] args) throws NoAlertPresentException, Interrupt
 	else
  	{
     	System.out.println("Perfect not Displayed !!!");					
- 	}		
+ 	}	
+	driver.close();
 }
 	
 }

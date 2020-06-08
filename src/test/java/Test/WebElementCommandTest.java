@@ -6,10 +6,12 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class WebElementCommandTest {
 
-	public static void main(String[] args) {
+	@Test
+	public void WebElementCommandDemo(){
 
 		String CurrentProjectPath = System.getProperty("user.dir");
 

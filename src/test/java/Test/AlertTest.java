@@ -5,12 +5,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.Alert;
 
 public class AlertTest {
 
-	public static void main(String[] args) throws NoAlertPresentException, InterruptedException {
+	//public static void main(String[] args) throws NoAlertPresentException, InterruptedException {
+	@Test
+	public void alertTestDemo(){
 		String CurrentProjectPath = System.getProperty("user.dir");
 
 		System.out.println("Path  " + CurrentProjectPath);
@@ -42,6 +45,8 @@ public class AlertTest {
 		alert.accept();
 	
 		System.out.println("alert");
+		
+		driver.close();
 	}
 
 }

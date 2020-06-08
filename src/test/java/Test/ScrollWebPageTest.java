@@ -3,10 +3,13 @@ package Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class ScrollWebPageTest {
 
-	public static void main(String[] args) {
+	@Test
+	public void ScrollWebPageTestDemo(){
+
 		
 		String CurrentProjectPath = System.getProperty("user.dir");
 
