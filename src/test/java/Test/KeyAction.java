@@ -3,11 +3,14 @@ package Test;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class KeyAction {
@@ -31,13 +34,17 @@ public class KeyAction {
 	 
 	     //Find web elements
 	      WebElement userName = driver.findElement(By.id("userName"));
+	      WebElement userEmail = driver.findElement(By.id("userEmail"));
 	      WebElement currAddr = driver.findElement(By.id("currentAddress"));
 	      WebElement perAddr = driver.findElement(By.id("permanentAddress")); 
-	      WebElement submitButton = driver.findElement(By.id("submit"));
+	      WebElement submitButton = driver.findElement(By.xpath("//button[@id='submit']"));
 	 
 	      //Instantiate Actions class
 	      Actions actions = new Actions(driver);
 	      actions.sendKeys(userName,"Mr.Jones").perform();
+	      
+	      //Email Address
+	      actions.sendKeys(userEmail,"jones@gmail.com");
 	 
 	      //Enter current address 
 	      actions.click(currAddr).sendKeys("1205 OAK STREET,OLD FORGE,NEW YORK,11240").perform();
@@ -48,13 +55,23 @@ public class KeyAction {
 	 
 	    //Paste current address in permanant adderss text field
 	     actions.keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).perform();
-	 
+	     System.out.println("Submit ");
+	    Thread.sleep(2000);
+	    
+	  /*  WebDriverWait wait = new WebDriverWait(driver, 10);
+	    	wait.until(ExpectedConditions.elementToBeClickable(submitButton)).click();
+	    	
+	    	
+	  */  	
+	    
+	    JavascriptExecutor js = (JavascriptExecutor)driver;  
+        js.executeScript("scrollBy(0, 500)");  
 	     //Click on Submit button
-	     submitButton.click();
+	    driver.findElement(By.xpath("//button[@id='submit']")).click();
 	 
 	     // Accept the Alert 
-	     driver.switchTo().alert().accept();
-	     System.out.println("Submit Alert Accepted");
+	   //  driver.switchTo().alert().accept();
+	   
 	 
 	    // Close the main window 
 	    driver.close(); 
