@@ -1,5 +1,5 @@
-13:45:44,593 DEBUG devpinoyLogger<strong>{1}</strong>:82 - Opened Website
-13:45:59,303 DEBUG devpinoyLogger<strong>{1}</strong>:91 - Entered Username
-13:45:59,987 DEBUG devpinoyLogger<strong>{1}</strong>:94 - Entered Password
-13:46:11,344 DEBUG devpinoyLogger<strong>{1}</strong>:97 - Clicked on login button
-13:46:11,816  INFO devpinoyLogger<strong>{1}</strong>:102 - Logged in successfully
+15:36:03,507 DEBUG devpinoyLogger<strong>{1}</strong>:82 - Opened Website
+15:36:14,380 DEBUG devpinoyLogger<strong>{1}</strong>:91 - Entered Username
+15:36:14,824 DEBUG devpinoyLogger<strong>{1}</strong>:94 - Entered Password
+15:36:23,627 DEBUG devpinoyLogger<strong>{1}</strong>:97 - Clicked on login button
+15:36:23,871  INFO devpinoyLogger<strong>{1}</strong>:102 - Logged in successfully
