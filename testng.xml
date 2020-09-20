@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite"  thread-count="1">
-  <test name="Test">
-    <classes>
-      <class name="Test.AlertTest"/>
-      <class name="Test.NavigationCommandTest"/>
-      <class name="Test.MouseHoverAction"/>
-      <class name="Test.DragNDropTest"/>
-      <class name="Test.AssertEqualsTest"/>
-      <class name="Test.AssertTrueTest"/>
-      <class name="Test.BrowserCommandTest"/>
-      <class name="Test.AssertNotEqualsTest"/>
-      <class name="Test.AssertNotNulllTest"/>
-      <class name="Test.DragNDropTest1"/>
-      <class name="Test.iFrameTest"/>
-      <class name="Test.TooltipAction"/>
-      <class name="Test.TestLogin"/>
-      <class name="Test.AlertTest1"/>
-      <class name="Test.KeyAction"/>
-      <class name="Test.CheckboxTest"/>
-      <class name="Test.RadioButtonTest"/>
-      <class name="Test.AssertFalseTest"/>
-      <class name="Test.DropDownTest"/>
-      <class name="Test.ScrollWebPageTest"/>
-      <class name="OrangeHRMProjectDemo.OrangeHRMProjectDemo.AppTest"/>
-      <class name="Test.RightClickAndDoubleClick"/>
-      <class name="Test.TestHello"/>
-      <class name="Test.WebElementCommandTest"/>
-      <class name="Test.AssertNullTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+ <suite name="ESFService" verbose="1" parallel="methods" thread-count="1" data-provider-thread-count="10" >
+    <test name="Basic">
+        <classes>
+            <class name="TestClass">
+                <parameter name="invocationCount" value="5"/>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+   
